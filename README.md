@@ -68,7 +68,7 @@
 
 **1. שכפול המאגר:**
 ```bash
-git clone [https://github.com/tamarlinden/Hackathon-Project.git](https://github.com/yk6749841-ai/Hackathon-Project.git)
+git clone [https://github.com/tamarlinden/Hackathon-Project.git](https://github.com/tamarlinden/Hackathon-Project.git)
 ```
 
 **2. הפעלת מנוע הפייתון:**
