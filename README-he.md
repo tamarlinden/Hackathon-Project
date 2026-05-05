@@ -105,4 +105,4 @@ npm run dev
 © **כל הזכויות שמורות (All Rights Reserved)**
 
 👨‍💻 **פותח ותוכנן על ידי:** 
-**Yehudit Kraus** - Full Stack & AI Developer | Building intelligent, real-time, scalable solutions.
+**Tamar Lindenfeld** - Full Stack & AI Developer | Building intelligent, real-time, scalable solutions.
