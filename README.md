@@ -1,59 +1,62 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
+[![he](https://img.shields.io/badge/lang-he-blue.svg)](README-he.md)
 
 # 🚀 SimuTech - NextGen AI-Driven Training Platform
 
-**SimuTech** היא פלטפורמת End-to-End מהפכנית להכשרה, סימולציה וניהול נציגים. המערכת שוברת את התבניות המוכרות של לומדות סטטיות, ומציגה ארכיטקטורה משולשת המורכבת משירות **Back-End חזק בטכנולוגיית Java**, ממשק **Front-End כפול בזמן אמת בטכנולוגיית React**, ומנוע **AI אוטונומי בטכנולוגיית Python** המייצר תרחישים בצורה דינאמית. 
+**SimuTech** is a revolutionary end-to-end platform for agent training, simulation, and management. The system breaks the mold of static learning modules, introducing a tri-layered architecture consisting of a **Robust Back-End (Java)**, a **Real-Time Dual Front-End (React)**, and an **Autonomous AI Engine (Python)** that dynamically generates scenarios.
 
-זוהי סביבה חיה ונושמת: ה-AI מדמה לקוחות אמיתיים, הנציג מתרגל בזמן אמת באמצעות טקסט וקול, והמנהל מפקח ממערכת שליטה מרכזית עם יכולת התערבות חיה באמצעות תקשורת WebSockets.
+This is a living, breathing environment: The AI simulates real clients, the agent practices in real-time (via text and voice), and the manager oversees everything from a central "Control Tower" with live chat intervention capabilities via WebSockets.
 
 ---
 
 ## 🔥 The Core Innovation: Dynamic AI & Live Intervention
 
-מה שמייחד את המערכת הוא השילוב בין מנוע ה-AI למערכת התקשורת בזמן אמת:
+What sets SimuTech apart is the seamless integration between the AI engine and the real-time communication system:
 
-* **ללא תסריטים סטטיים** - אין יותר שאלות ותשובות מובנות מראש. מנוע הפייתון מקבל פרומפטים מורכבים ומייצר אישיות וירטואלית של לקוח. הלקוח הווירטואלי מגיב, מתנגד, ושואל שאלות באופן דינאמי בהתאם לתשובות שהנציג מספק.
-* **המאמן השקוף** - בזמן שהנציג מנהל את הסימולציה מול ה-AI, מנהל ההדרכה רואה את השיחה בזמן אמת בדשבורד המנהלים. באמצעות חיבור רציף, המנהל יכול לשלוח הודעות מתפרצות למסך של הנציג ולתת לו פידבק מדויק ברגע האמת, מבלי שהלקוח הווירטואלי יזהה זאת.
+* **No Static Scripts** - No more pre-defined Q&As. The Python engine utilizes complex Prompt Engineering to generate a client "persona". The virtual client responds, objects, and asks questions dynamically based on the agent's input.
+* **The Invisible Coach** - While the agent is in a simulation with the AI, the training manager monitors the live conversation on their dashboard. Through WebSocket connections, the manager can send "push messages" directly to the agent's screen, providing precise feedback in real-time without the virtual client "knowing".
 
 ---
 
 ## 🏗️ System Architecture (Microservices Approach)
 
-המערכת בנויה מארבעה שירותים נפרדים המתקשרים ביניהם בסנכרון מלא:
+The system consists of 4 isolated services fully synchronized with each other:
 
-### 1. מנוע הבינה המלאכותית 🧠 (AI Engine - Python)
-השירות האחראי על יצירת החוויה והלוגיקה ההתנהגותית ממוקם בתיקיית `python`.
-* **יצירת תרחישים דינאמית** - שימוש במודלי שפה מורכבים ליצירת תרחישי שיחה ייחודיים לכל נציג ונציג.
-* **סימולטור קולי** - המרת טקסט לדיבור והמרת דיבור לטקסט כדי לאפשר לנציגים לתרגל שיחות טלפון קוליות מול הבוט בצורה טבעית.
-* **ניתוח וציונים** - ניתוח אוטומטי של ביצועי הנציג בסיום השיחה לפי מדדי אמפתיה ומקצועיות, והחזרת ציון מסכם למערכת.
+### 1. The Brain 🧠 (AI Engine - Python)
+The service responsible for generating the experience and behavioral logic (located in the `python` directory).
+* **Dynamic Scenario Generation** - Utilizing Large Language Models (LLMs) to create unique conversational scenarios for each agent.
+* **Voice Simulator** - Text-to-Speech (TTS) and Speech-to-Text (STT) integration allowing agents to practice natural voice calls.
+* **Analysis & Scoring** - Automated post-call analysis of the agent's performance (empathy, professionalism, problem-solving) with grade calculation.
 
-### 2. ליבת השרת ⚙️ (Back-End - Java Spring Boot)
-המנוע שמחזיק את המערכת, מנהל את הרשאות הגישה ומסד הנתונים ממוקם בתיקיית `hackathon-java`.
-* **תקשורת זמן אמת** - ניהול ערוצי צ'אט פתוחים בין מנהלים לנציגים להעברת נתונים מיידית וללא עיכובים.
-* **ניהול מסד נתונים טבלאי** - תכנון סכמת נתונים קפדנית הכוללת מודלים מורכבים בשימוש כלי מיפוי מתקדמים.
-* **מחיקה עמוקה ובטוחה** - לוגיקה עסקית מתקדמת לשמירה על שלמות הנתונים. מחיקת נציג מנקה באופן מוחלט את כל ההיסטוריה שלו מהשרת ללא עקבות וללא שגיאות.
-* **ממשק פיתוח יישומים** - ארכיטקטורת תוכנה מסודרת לשירות מדויק של מספר פלטפורמות במקביל.
+### 2. The Core ⚙️ (Back-End - Java Spring Boot)
+The engine powering the system, managing access control, real-time communication, and data persistence (located in the `hackathon-java` directory).
+* **Real-Time WebSockets** - Managing open chat channels between managers and agents for zero-latency data transfer.
+* **Relational Database Management** - Strict DB schema featuring complex entity models using JPA/Hibernate.
+* **Cascade & Hard Delete** - Advanced business logic for data integrity. Deleting an agent completely wipes their entire history from the server with no redundant errors.
+* **RESTful API** - Controller and Service-based architecture serving multiple distinct clients.
 
-### 3. מגדל הפיקוח 📡 (Manager Dashboard)
-ממשק ניהול מתקדם מבוסס React המיועד למנהלי מוקדים ומדריכים וממוקם בתיקיית `dashboard`.
-* **מעקב חי** - תצוגת טבלה אינטראקטיבית עם סטטוסים חיים של כל הנציגים המחוברים כעת.
-* **חלון צ'אט דינאמי** - חלונית קופצת המושכת היסטוריה ומאפשרת התכתבות ישירה מול כל נציג בנפרד במהלך העבודה.
-* **הקצאת משימות** - שיוך תסריטי סימולציה ספציפיים לנציגים לביצוע, ומעקב מדויק אחר השלמתם.
-* **אנליטיקה ודירוגים** - לוחות בקרה חזותיים המציגים אחוזי הצלחה, רמות וגרפים של שיפור לאורך תהליך ההכשרה.
+### 3. The Control Tower 📡 (Manager Dashboard)
+Advanced React-based interface designed for managers and supervisors (located in the `dashboard` directory).
+* **Live Monitoring** - Interactive data grid displaying live statuses of all connected agents.
+* **Dynamic Chat Window** - Dynamic popup fetching chat history and enabling direct messaging to individual agents.
+* **Task Assignment** - Assigning specific AI simulation scenarios to agents and tracking completion.
+* **Analytics & Ranks** - Visual dashboards displaying success rates, ranks, and progress charts.
+
 <img width="3504" height="2305" alt="manager" src="https://github.com/user-attachments/assets/c205f789-90e7-4d88-a674-8d19c84b88ff" />
 
 
-### 4. זירת הנציג 🎧 (Agent Simulator)
-סביבת העבודה של משתמש הקצה שנועדה להיות חלקה ומתקדמת וממוקמת בתיקיית `front-simulator`.
-* **חדר סימולציה** - חדר תרגול המחולק לצ'אט מול הבינה המלאכותית, הדמיה קולית, ותיבת הכוונה סמויה לקבלת מסרים מהמנהל.
-* **סביבת עבודה אישית** - אזור משימות המציג דרישות פתוחות מההנהלה, היסטוריית דיווחים ותיבת הערות אישיות.
-* **חווית משתמש רספונסיבית** - עיצוב נקי ומוקפד המדמה מערכות ניהול מציאותיות ומתקדמות.
+### 4. The Agent Arena 🎧 (Agent Simulator)
+The end-user application built to be smooth, distraction-free, and advanced (located in the `front-simulator` directory).
+* **Simulation Room** - A training environment divided into AI chat, voice simulation, and a hidden guidance box for manager messages.
+* **Personal Workspace** - Dedicated area for open tasks, performance reports, and personal notes.
+* **Responsive UI/UX** - Clean, professional design simulating real-world CRM systems.
+
 <img width="3465" height="2493" alt="Untitled-1" src="https://github.com/user-attachments/assets/73183ef0-02f7-4394-8fbf-03fc05bcfd44" />
+
 ---
 
 ## 💻 Tech Stack
 
-| שכבה | טכנולוגיות |
+| Layer | Technologies |
 | :--- | :--- |
 | **Artificial Intelligence** | Python, Large Language Models (LLMs), Prompt Engineering, Voice Processing |
 | **Backend Architecture** | Java, Spring Boot, Spring Web, WebSockets, Spring Data JPA, Hibernate, REST API |
@@ -64,14 +67,14 @@
 
 ## 🛠️ Getting Started (Local Development)
 
-הפרויקט מחולק למיקרו-שירותים. כדי להעלות את סביבת הפיתוח המלאה, יש להריץ כל שירות בסביבת הריצה שלו.
+The project uses a microservices architecture. To run the full End-to-End development environment, start each service separately.
 
-**1. שכפול המאגר:**
+**1. Clone the Repository:**
 ```bash
 git clone [https://github.com/tamarlinden/Hackathon-Project.git](https://github.com/tamarlinden/Hackathon-Project.git)
 ```
 
-**2. הפעלת מנוע הפייתון:**
+**2. Start the AI Engine (Python):**
 ```bash
 cd python
 python -m venv venv
@@ -79,21 +82,21 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**3. הפעלת השרת הראשי (Java):**
+**3. Start the Backend Core (Java):**
 ```bash
 cd hackathon-java
 ./mvnw clean install
 ./mvnw spring-boot:run
 ```
 
-**4. הפעלת ממשק המנהל:**
+**4. Start the Manager Control Tower (Dashboard):**
 ```bash
 cd dashboard
 npm install
 npm run dev
 ```
 
-**5. הפעלת ממשק הנציג:**
+**5. Start the Agent Workspace (Front Simulator):**
 ```bash
 cd front-simulator
 npm install
@@ -102,7 +105,7 @@ npm run dev
 
 ---
 
-© **כל הזכויות שמורות (All Rights Reserved)**
+© **All Rights Reserved**
 
-👨‍💻 **פותח ותוכנן על ידי:** 
+👨‍💻 **Developed and Architected by:** 
 **Tamar Lindenfeld** - Full Stack & AI Developer | Building intelligent, real-time, scalable solutions.
